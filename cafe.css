@@ -38,4 +38,7 @@ header {border: 1px solid red;
         background-size: cover; /* 이미지 하나로 다 채움 */
         background-position: center center;
         /* 이미지의 중앙을 기준으로 보여짐 */}
-nav {background-color: #000;}
+nav {   background-color: #000;
+        height: 50px; }
+nav ul {list-style: none; /* 목록 앞의 모양제거 */
+        padding: 10px;}
