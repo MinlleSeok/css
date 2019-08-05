@@ -1,0 +1,104 @@
+@CHARSET "UTF-8";
+
+.noto {
+ font-family: 'Noto Sans KR', sans-serif;}
+
+.nanum-ps {
+ font-family: 'Nanum Pen Script', cursive;}
+
+h1 {background-color: pink; 
+ border-left: 12px solid violet; 
+ padding: 10px 16px;
+ font-size: 22px;
+ font-family: 'Cute Font', cursive; }
+
+h2 {background-color: violet; 
+ border-left: 12px solid pink; 
+ padding: 8px 14px;
+ font-size: 20px; 
+ font-family: 'Cute Font', cursive;
+ color: #fff;}
+
+section { border: 4px dashed pink; 
+ padding: 30px 10px;
+ margin: 30px 0;  }
+
+section>div {
+ background-color: #ddd;
+ padding: 20px;
+ font-weight: bold; }
+
+
+ /* font-size */
+ 
+ #sec01 {font-size: 30px;} 
+ 
+ .fs01 {font-size: 16px;}
+ .fs02 {font-size: 20px;}
+ .fs03 {font-size: 1em;}
+ .fs04 {font-size: 0.5em;}
+ .fs05 {font-size: 1.2em;}
+ .fs06 {font-size: 1rem;}
+ .fs07 {font-size: 0.5rem;}
+ .fs08 {font-size: 1.2rem;}
+ 
+ 
+  /* font-weight */
+ 
+ .fw01 {font-weight: bold;}
+ .fw02 {font-weight: normal;}
+ 
+ .fw100 {font-weight: 100;}
+ .fw200 {font-weight: 200;}
+ .fw300 {font-weight: 300;}
+ .fw400 {font-weight: 400;}
+ .fw500 {font-weight: 500;}
+ .fw600 {font-weight: 600;}
+ .fw700 {font-weight: 700;}
+ .fw800 {font-weight: 800;}
+ .fw900 {font-weight: 900;}
+ 
+
+
+ /* font-style */
+.i {font-style: italic;}
+
+.in {font-style: normal;}
+
+
+ /* font-family */
+
+.ffm01 {
+	font-family: "Georgia","Times",serif; }
+
+.ffm02 {
+ font-family: "Verdana", "Arial",sans-serif;	
+}
+
+/* https://fonts.google.com 
+
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Cute Font', cursive;
+font-family: 'Nanum Pen Script', cursive;
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

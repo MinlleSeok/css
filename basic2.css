@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+
+.img-brdr {
+	border: 6px double #999; 
+	width:650px;}
+	
+#sec01>p {
+	border: 2px solid #999;
+	width:650px;
+	height: 80px;	}
+	
+.orange {background-color:orange; }	
+.yellow {background-color:yellow; }	
+.khaki {background-color:khaki; }
+.brown {background-color:brown;}	
+.navy {background-color:navy;}
+	
+.t-orange {color:orange;}	
+.t-yellow {color:yellow; }	
+.t-khaki {color:khaki; }	
+.t-brown {color:brown;}	
+.t-navy {color:navy;}
+
+.brdr-dash {border: 4px dashed;}/*점선*/
+.brdr-doub {border: 4px double;}/*이중선*/
+.brdr-dott {border: 4px dotted;}/*도트*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

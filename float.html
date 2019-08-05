@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>float</title>
+<link href="float.css" rel="stylesheet">
+</head>
+<body>
+<h1 id="logo">float - 부유하다</h1>
+<nav>
+ <ul>
+  <li><a href="#sec">menu01</a></li>
+  <li><a href="#sec01">menu02</a></li>
+  <li><a href="#sec02">menu03</a></li>
+  <li><a href="#sec03">menu04</a></li>
+  <li><a href="#sec04">menu05</a></li>
+  <li><a href="#sec05">menu06</a></li>
+ </ul>
+</nav>
+
+<section id="sec">
+<ul>
+ <li>float:left; 띄워서 왼쪽으로 </li>
+ <li>float:right; 띄워서 오른쪽으로 </li>
+</ul>
+
+<p>float을 적용하면 해당 요소는 브라우저 위에 뜬 상태가 되어
+ 왼쪽이나 오른쪽에 물 흐르듯이 자연스럽게 배치가 된다.<br>
+ - float을 적용한 요소의 뒤에 오는 다른 요소에 까지 영향을 미쳐서
+ 다음 요소가 위로 밀고 올라오게 되는데 <br>원치 않을 경우
+ 속성 clear: both;를 그 다음 요소에 적용하면 float의 영향이
+ 해제된다.<br>
+ - float을 적용한 요소는 가로 크기가 줄어든다.<br>
+ - 부모 안의 모든 자식요소가 float이 되면 부모는 높이값을 잃어버린다.
+</p>
+</section>
+
+<section id="sec01">
+ <h2>float:left;</h2>
+ <img alt="diary" src="img/diary.jpg">
+ <p class="fl01">float:left; <br>
+ 무한한 가진 고동을 동력은 역사를 품고 품었기 찬미를 곳이 그리하였는가? 방황하였으며, 하는 인생을 꾸며 안고, 간에 칼이다. 생생하며, 가진 청춘을 설레는 황금시대를 피에 살았으며, 듣는다. 내려온 긴지라 인생을 속에서 봄날의 많이 이것이야말로 쓸쓸하랴? 오아이스도 있으며, 바로 열락의 이것은 무엇이 공자는 쓸쓸하랴? 설레는 기쁘며, 가슴에 위하여서 용기가 스며들어 것이다. 이것이야말로 피는 끝까지 싶이 창공에 굳세게 길지 있으랴? 않는 끝에 그림자는 무엇을 힘있다. 방지하는 투명하되 열매를 이것을 과실이 칼이다.
+ </p>
+</section>
+
+<section id="sec02">
+ <h2>float:right;</h2>
+ <img alt="diary" src="img/diary.jpg">
+ <p class="fl02">float:right; <br>
+ 무한한 가진 고동을 동력은 역사를 품고 품었기 찬미를 곳이 그리하였는가? 방황하였으며, 하는 인생을 꾸며 안고, 간에 칼이다. 생생하며, 가진 청춘을 설레는 황금시대를 피에 살았으며, 듣는다. 내려온 긴지라 인생을 속에서 봄날의 많이 이것이야말로 쓸쓸하랴? 오아이스도 있으며, 바로 열락의 이것은 무엇이 공자는 쓸쓸하랴? 설레는 기쁘며, 가슴에 위하여서 용기가 스며들어 것이다. 이것이야말로 피는 끝까지 싶이 창공에 굳세게 길지 있으랴? 않는 끝에 그림자는 무엇을 힘있다. 방지하는 투명하되 열매를 이것을 과실이 칼이다.
+ </p>
+</section>
+
+<section id="sec03">
+ <h2>float:left;</h2>
+ <ul>
+  <li>menu01</li>
+  <li>menu02</li>
+  <li>menu03</li>
+  <li>menu04</li>
+ </ul>
+ <p>clear: both; 로 float의 영향을 해제함.<br>
+ 무한한 가진 고동을 동력은 역사를 품고 품었기 찬미</p>
+</section>
+
+<section id="sec04">
+ <h2>float:right;</h2>
+ <ul>
+  <li>menu01</li>
+  <li>menu02</li>
+  <li>menu03</li>
+  <li>menu04</li>
+ </ul>
+ <p>clear: both; 로 float의 영향을 해제함.<br>
+ 무한한 가진 고동을 동력은 역사를 품고 품었기 찬미</p>
+</section>
+
+<section id="sec05">
+ <h2>float:left,right;</h2>
+ <ul>
+  <li>menu01</li>
+  <li>menu02</li>
+ </ul>
+ <p>clear: both; 로 float의 영향을 해제함.<br>
+ 무한한 가진 고동을 동력은 역사를 품고 품었기 찬미</p>
+</section>
+
+
+
+</body>
+</html>

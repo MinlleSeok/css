@@ -1,0 +1,99 @@
+@CHARSET "UTF-8";
+h1 {background-color: #39a; 
+ color: #9ef;
+ border-left: 10px solid;
+ padding-left: 8px;
+ padding-bottom: 6px; }
+
+h3 { color: #39a;
+border-bottom: 4px dashed;
+padding-bottom: 6px;
+padding-left: 8px;}
+
+dl {background-color: #9ef;
+color: #39a;
+line-height: 1.8; 
+padding: 20px 0 22px 18px; }
+
+dt {font-weight: bold;
+ border-bottom: 1px solid;}
+ 
+dd {padding-top: 12px;}
+ 
+ 
+
+.pad01 {border: 1px solid #f00;
+ width: 130px;
+ padding: 10px 50px 80px 120px; }
+
+.pad02 {border: 1px solid #0f0;
+ width: 100px;	
+ padding: 20px 100px; }
+
+.pad03 {border: 1px solid #00f;
+ width: 85px;	
+ padding: 30px;}
+
+ol ul>li {border: 1px solid #fa0; }
+
+.pad04-1 {padding-top: 50px;}
+.pad04-2 {width:120px;
+	padding-right: 50px;}
+.pad04-3 {padding-bottom: 50px;}
+.pad04-4 {padding-left: 50px;}
+
+ /* 적용 예시 */
+nav {margin: 50px; } 
+ 
+nav>a {border: 1px solid;
+ padding: 6px 12px; }
+ 
+label {
+ text-transform: uppercase;	
+ font-size: 1.3em;
+ font-weight: bold; }
+ 
+input {
+ font-size: 1.3em;	
+ padding: 0.2em 0.8em;  }
+ 
+ 
+.photo {border: 1px solid #666;
+width: 220px;
+padding: 10px 10px 50px 10px;
+box-shadow: 2px 3px 6px #999;
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

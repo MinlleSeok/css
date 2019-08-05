@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transition</title>
+<link href="transition.css" rel="stylesheet">
+</head>
+<body>
+<h1>transition</h1>
+<ul>
+ <li>transition-name: 적용할 속성</li>
+ <li>transition-duration: 진행 시간(단위는 s나 ms)</li>
+ <li>transition-delay: 지연 시간(단위는 s나 ms)</li>
+ <li>transition-timing-funtion: 가속 감속 등의 효과
+  <ol>
+   <li>ease</li>
+   <li>ease-in</li>
+   <li>ease-out</li>
+   <li>ease-in-out</li>
+   <li>linear</li>
+   <li>cubic-bezier(n,n,n,n)
+  <a href="https://cubic-bezier.com" target="_blank">
+    베지에곡선값 생성기</a> 
+   </li>  
+  </ol>
+ </li>
+</ul>
+
+<div id="circle">circle</div>
+
+<section id="sec01">
+<h2>transition-timing-function: 가속 감속 등</h2>
+ <div class="tf01">ease</div>
+ <div class="tf02">ease-in</div>
+ <div class="tf03">ease-out</div>
+ <div class="tf04">ease-in-out</div>
+ <div class="tf05">linear</div>
+ <div class="tf06">cubic-bezier(.61,1.84,.42,-1.05)</div>
+ <div class="tf07">cubic-bezier(1,-0.02,0,1.03)</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

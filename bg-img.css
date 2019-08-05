@@ -1,0 +1,140 @@
+@CHARSET "UTF-8";
+ body {
+background-image:url("img/diary.jpg"); 
+background-size:cover;
+/* background-attachment: fixed; */}
+
+ ul {background-color: #000;
+ width:700px;
+ padding:30px 40px;
+ color: #fff;
+ font-size: 20px;}
+ 
+ /* ★목록 앞의 모양으로 이미지 지정하기-1 (목록속성을 이용한 방법)★ */
+ul:NTH-OF-TYPE(1) {
+ list-style: url("img/aniyellow.gif");/*목록 앞의 모양 지정하는 속성*/	
+   /*list-style-image: url(""); 목록 앞의 모양을 이미지로  지정하는 속성*/
+ }
+
+ /* ★목록 앞의 모양으로 이미지 지정하기-2 (배경이미지를 이용한 방법)★ */
+ul:NTH-OF-TYPE(2)>li { 
+ border:1px solid #fd0;	
+ margin-bottom:10px;
+ list-style:none; /* 1.기본 목록 앞의 모양 제거 */
+ background-image: url("img/aniyellow.gif");
+  /* 2.목록 앞의 모양대신 이미지를 배경으로 지정 */
+ background-repeat: no-repeat; /* 3.배경이미지를  하나만 남김 */	
+ background-position: 5px center; /* 4.배경이미지 수평수직 위치를 지정 */
+ padding-left: 32px; /* 5.배경이미지와 글자가 겹쳐서 내부여백으로 글자를 옮김 */
+}
+
+
+
+
+ /* background-repeat */
+#re01, #re02, #re03, #re04 {
+ border: 3px solid #f00;	
+ background-color:#fff;
+ height: 600px;
+ margin-bottom: 30px;/* 외부아래쪽 여백지정 */
+ padding: 40px; /* 내부여백지정 */
+ background-image: url("img/building.jpg"); 
+ font-size: 30px;
+ line-height: 1.8;/* 행간 */}
+ 
+#re01 {background-repeat: repeat;} 
+#re02 {background-repeat: repeat-x;} 
+#re03 {background-repeat: repeat-y;}
+#re04 {background-repeat: no-repeat;} 
+ 
+ 
+ 
+ 
+ /* background-position */
+ 
+ #pos>div {border: 3px solid #fa0;
+  background-color:#ffd;
+  height: 650px;
+  margin-bottom: 30px;
+  background-image: url("img/building.jpg");
+  background-repeat: no-repeat;
+  font-size: 30px;}
+ 
+#pos01 {background-position: left top;}
+#pos02 {background-position: center top;} 
+#pos03 {background-position: left center;} 
+#pos04 {background-position: center center;}
+#pos05 {background-position: right bottom;}
+#pos06 {background-position: 640px 426px;}
+
+
+ /* background-size */
+#size>div {border: 4px double #0af;
+ background-color: #999;
+ height: 600px;
+ margin-bottom: 40px;
+ background-image: url("img/bokeh.jpg");
+ font-size: 30px;} 
+ 
+#size01 {background-size: contain;}
+#size02 {background-size: cover;} 
+#size03 {background-size: 100% 100%;} 
+#size04 {background-size: 50% 600px;}
+#size05 {background-size: 50px 40px;}
+ 
+ 
+ 
+  /* background-attachment */
+ 
+#att01, #att02, #att03 {
+	border: 3px dashed #666;
+	width: 600px;  height: 200px;
+	margin-bottom: 30px;
+	overflow: auto;
+	font-size: 25px;
+	line-height: 1.8;
+	background-image: url("img/email.jpg");
+	background-position: center center;
+	text-align: right;  }
+ 
+#att01 {background-attachment: scroll;}
+#att02 {background-attachment: fixed;} 
+#att03 {background-attachment: local;}  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

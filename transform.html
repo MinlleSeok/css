@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transform</title>
+<link href="transform.css" rel="stylesheet">
+</head>
+<body>
+<h1>transform:변형함수();</h1>
+<ul>
+ <li>translate 위치 변형
+  <ol>
+   <li>transform:translateX(n); X축 방향. n은 모든 단위 가능.(음수값 가능)</li>
+   <li>transform:translateY(n); Y축 방향. n은 모든 단위 가능.(음수값 가능)</li>
+   <li>transform:translate(n,n); X축,Y축방향. n은 상동</li>
+  </ol>
+ </li>
+ <li>scale 크기 변형
+  <ol>
+   <li>transform:scaleX(n); X축 방향. 
+    n은 1을 기준으로 1보다 작으면 축소, 1보다 크면 확대</li>
+   <li>transform:scaleY(n); Y축 방향. n은 상동</li>
+   <li>transform:scale(n,n); X축,Y축방향. n은 상동</li>
+  </ol>
+ </li>
+ <li>rotate 회전 변형
+  <ol>
+   <li>transform:rotateX(n); X축 방향.  
+    n의 단위는 deg.(음수값 가능)</li>
+   <li>transform:rotateY(n); Y축 방향. n은 상동</li>
+   <li>transform:rotate(n); Z축 방향. n은 상동</li>
+  </ol>
+ </li>
+ <li>skew 기울기 변형
+  <ol>
+   <li>transform:skewX(n); X축 방향.  
+    n의 단위는 deg.(음수값 가능)</li>
+   <li>transform:skewY(n); Y축 방향. n은 상동</li>
+   <li>transform:skew(n,n); X축,Y축 방향. n은 상동</li>
+  </ol>
+ </li>
+</ul>
+
+<section id="sec01">
+<h2>translate 위치 변형</h2>
+<p class="trans01">translateX(600px)</p>
+<p class="trans02">translateX(-100px)</p>
+<p class="trans03">translateY(300px)</p>
+<p class="trans04">translateY(-300px)</p>
+<p class="trans05">translate(500px,-400px)</p>
+<p class="trans06">translate(-50px,-200px)</p>
+</section>
+
+<section id="sec02">
+<h2>scale 크기 변형</h2>
+<p class="scale00">width: 440px;<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="scale01">scaleX(2)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="scale02">scaleX(0.5)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="scale03">scaleY(2)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="scale04">scaleY(0.3)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="scale05">scale(0.5,0.5)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="scale06">scale(2.5,3)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+</section>
+
+<section id="sec03">
+<h2>rotate 회전 변형</h2>
+<p class="rotate00">rotate <br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="rotate01">rotateX(180deg);<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="rotate02">rotateX(-180deg);<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="rotate03">rotateY(180deg) <br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="rotate04">rotateY(90deg)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="rotate05">rotate(180deg)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="rotate06">rotate(-180deg)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="rotate07">rotate(720deg)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="rotate08">rotate(-45deg)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="rotate09">rotateX(85deg)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+</section>
+
+<section id="sec04">
+<h2>skew 기울기 변형 </h2>
+<p class="skew00">skew <br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="skew01">skewX(20deg)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="skew02">skewX(-20deg)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="skew03">skewY(20deg)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="skew04">skewY(-20deg)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="skew05">skew(20deg,20deg)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="skew06">skew(-40deg,-40deg)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+<p class="skew07">skew(90deg,20deg)<br>
+ <img alt="dog" src="img/dog.png">
+</p>
+</section>
+
+
+<section id="sec05">
+<h2>transform의 다중 적용 </h2>
+ <p>
+  변형을 2가지 이상 적용하려면 각 변형 함수를 나열하면 된다.<br>
+ (예시) transform:변형함수1() 변형함수2() 변형함수3();<br>
+  단, 순서에 따라 결과가 달라질 수 있음을 유념.
+ </p>
+
+ <h3>transform: translate rotate; 일 때 </h3>
+  <div class="mix01">translateX(800px) rotate(720deg)</div>
+ <h3>transform: rotate translate; 일 때 </h3>
+  <div class="mix02">rotate(720deg) translateX(800px)</div>
+ <h3>transform: translate scale ; 일 때 </h3>
+  <div class="mix03">translate(700px,-300px) scale(4)</div>
+ <h3>transform: scale translate ; 일 때 </h3>
+  <div class="mix04">scale(4) translate(700px,-300px) </div>
+</section>
+
+<section id="sec06">
+<h2>transform-origin : 변형의 기준점 </h2>
+<p>
+ 변형의 기준점은 center center 또는 50% 50% 가 기본값임. <br>
+ 수평과 수직의 순서로 변경 가능함.<br>
+ (예시1) transform-origin : n% n% / npx npx / ... <br>
+ (예시2) transform-origin : left top / right bottom/ ...
+</p>
+<h3>scale변형</h3>
+<div class="ori01 scale">transform-origin:center center;</div>
+<div class="ori02 scale">transform-origin:center top</div>
+<div class="ori03 scale">transform-origin:center bottom</div>
+<div class="ori04 scale">transform-origin:10% 30%;</div>
+
+<h3>rotate변형</h3>
+<div class="ori01 rotate">transform-origin:center center;</div>
+<div class="ori02 rotate">transform-origin:center top</div>
+<div class="ori03 rotate">transform-origin:center bottom</div>
+<div class="ori04 rotate">transform-origin:10% 30%;</div>
+<div class="ori05 rotate">transform-origin:0% 0%;</div>
+</section>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+

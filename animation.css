@@ -1,0 +1,210 @@
+@CHARSET "UTF-8";
+
+.pre {white-space: pre; }
+
+h1 {color:#a90;
+ font-size: 50px;
+ position: relative;   }
+ 
+h1>b {border: 4px solid;
+	border-radius: 50%;
+	width: 1em;	height: 1em;
+	display: inline-block;
+	text-align: center;
+	line-height: 0.8em;
+	position: relative;
+	top:50px;    left: 50px;
+	animation: ball 6s 2s infinite;
+}
+
+h1>b:NTH-OF-TYPE(1) {
+animation-delay:1s; }
+h1>b:NTH-OF-TYPE(2) {
+animation-delay:1.4s; }
+h1>b:NTH-OF-TYPE(3) {
+animation-delay:1.8s; }
+h1>b:NTH-OF-TYPE(4) {
+animation-delay:2.2s; }
+h1>b:NTH-OF-TYPE(5) {
+animation-delay:2.6s; }
+h1>b:NTH-OF-TYPE(6) {
+animation-delay:3s; }
+h1>b:NTH-OF-TYPE(7) {
+animation-delay:3.4s; }
+h1>b:NTH-OF-TYPE(8) {
+animation-delay:3.8s; }
+h1>b:NTH-OF-TYPE(9) {
+animation-delay:4.2s; }
+
+@keyframes ball {
+  0% {top:-200px;
+    left: -50px; }
+     
+  20% {top:100px;
+     left: 400px; } 
+       
+  50% {top:0px;
+    left: 100px;
+    transform:rotate(360deg); }  
+
+  70% {top:50px;
+    left: 200px; }
+ }
+
+#text {background-color:#a90;
+ width:700px;
+ margin:1em auto;
+ padding:2em 3em;
+ line-height: 1.8;
+ font-size: 1.2em;}
+
+#text ol {height: 0;
+ overflow: hidden;}
+ 
+#text>li:HOVER>ol {
+ height: 130px;
+ transition: all 1.5s ease-out;}
+
+ /* animation 만들기*/
+@keyframes circle { 
+ 0% {background-color:#ff0; 
+    border-radius: 0;
+    left: 0;
+    top:0;}
+    
+ 30% {text-align:center;
+   color:red;}
+   
+ 50% {font-size:25px;
+    top:-80px;
+    transform:rotate(360deg);}  
+ 	
+ 100%{background-color:#0f0; 
+    border-radius: 50%;
+    font-size:25px;
+    left:600px;
+    top:0;}	
+}
+
+.fill>li {
+	border: 1px solid;
+	width: 200px;
+	height: 50px;
+	background-color: pink; 
+	animation:circle 5s; }
+	
+.fill>li:NTH-OF-TYPE(1) {
+animation-fill-mode:none;}
+.fill>li:NTH-OF-TYPE(2) {
+animation-fill-mode:forwards;}
+.fill>li:NTH-OF-TYPE(3) {
+animation-fill-mode:backwards;}
+.fill>li:NTH-OF-TYPE(4) {
+animation-fill-mode:both;}
+
+ /* 애니메이션의 적용 */
+.box01 {border: 1px solid;
+ width:150px;
+ height: 150px;
+ position: relative;
+ animation:circle 3s;
+ animation-iteration-count:infinite;/* 무한반복 */
+ animation-direction:alternate-reverse;/* 역순왕복 */
+}
+
+ 
+ 
+ 
+ /* 형제관계인 요소의 애니메이션 제어하기 */
+input#btn {display: none;/* 체크박스는 안보이게 설정 */}
+ 
+label.btn {background-color: #360;/* 안보이는 체크박스의 역할을 대신함 */ 
+ color: #fff;
+ width: 300px; height: 60px;
+ box-sizing:border-box /* 요소의 크기 계산시 패딩과 보더 포함 */;
+ display: block /* label은 인라인요소이므로 크기 적용 불가해서
+                                   요소의 성격을 바꿔줌 */;
+ position:relative;  /* 위치를 아래의 애니메이션과 겹치게...  */
+ top: 70px; left:20px;
+ text-align: center;
+ line-height: 60px;
+ font-size:1.3em;
+ font-weight: bold;}
+ 
+ label.btn:HOVER {border: 4px solid;
+ background-color: #fff; 
+ color:#360;
+ line-height: 52px;
+ cursor: pointer;/* 커서 모양 바꿈 */ 
+ box-shadow: 0 0 4px #360; /* 영역에 그림자 지정 */ }
+ 
+ 
+ input#btn:CHECKED+#sec01 {/*체크박스에 체크시 인접 형제인 요소의 상태를 지정 */
+ animation-play-state: paused /* 애니메이션 제어(멈춤) */;
+ } 
+ 
+ 
+#sec01 {background-image: url("img/bokeh.jpg");
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ 
+ animation:bgimg 40s infinite;
+}
+
+@keyframes bgimg { /* 배경이미지가 바뀌는 애니메이션 */
+  0% {background-image: url("img/bokeh.jpg");}		
+ 20% {background-image: url("img/butf.jpg");} 
+ 40% {background-image: url("img/diary.jpg");} 	
+ 60% {background-image: url("img/fields.jpg");}			
+ 80% {background-image: url("img/building.jpg");}	
+}
+
+
+
+ /*animation-direction 진행 방향  */
+section {border: 3px dashed #ccc; 
+ margin: 3em 0.5em;
+ padding: 1em; }
+
+#sec01>div {border: 1px solid;
+ width: 150px; height: 50px;
+ margin-bottom: 30px;
+ color:#fff;
+ font-size:1.2em;
+ position:relative;
+ animation:move 4s 0.7s infinite;} 
+
+@keyframes move {
+  0% {left:0;
+      top:0;
+      background-color: #f00;}	
+ 
+ 50% {top:100px;}	
+	
+100% {left:600px;
+      top:0;
+      background-color: #00f;}	
+}
+
+
+.direct01 {animation-direction:normal;/* 정방향으로 진행 */}
+.direct02 {animation-direction:reverse !important;/* 역방향 */}
+.direct03 {animation-direction:alternate !important;/* 왕복 */}
+.direct04 {animation-direction:alternate-reverse !important; /* 역방향 왕복 */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

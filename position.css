@@ -1,0 +1,122 @@
+@CHARSET "UTF-8";
+body {margin: 0;}
+
+section {
+border: 3px solid #ccc; 
+margin: 2em;
+padding: 1em;}
+
+#sec00 {
+background-color: #aef;
+margin: 0;
+color: #248;
+position: sticky;
+top:0px;
+z-index: 9999;}
+
+
+/* position:relative; 현재 위치를 기준으로 좌표 지정 */
+#sec01>p {
+border: 1px solid #479;
+width: 150px; 	
+position: relative; }
+
+#sec01:HOVER>p {
+/* 부모에게 후버시 자식은 좌표값을 잃어
+버리고 제자리로 돌아가도록 설정(static) */
+position: static;}
+
+.rel01 {left: 600px;}
+.rel02 {right: 150px;
+ text-align: right;}
+.rel03 {top: 200px;}
+.rel04 {bottom: 200px;}
+.rel05 {top: -100px;}
+
+
+
+/* position: absolute; 부모를 기준으로 좌표 지정*/
+
+#sec02 {height: 300px;
+	position: relative;
+/* 	left: 200px;
+	top:100px; */}
+
+#sec02>p {
+border: 1px solid #e79;
+width: 150px; 
+position: absolute;}	
+
+.absol01 {left: 0;  top:0;}
+.absol02 {right: 0;}
+.absol03 {bottom: 0;}
+.absol04 {left: -50px;
+ top:-70px;}
+
+
+/* position:fixed; 브라우저를 기준으로 좌표 지정 */
+#sec03 {height: 200px;}
+
+#sec03>p {
+border: 1px solid #79e;
+width: 150px;
+position: fixed; }
+
+.fix01 {top:100px;
+ left: 500px;}
+
+.fix02 {top:150px;
+ right: 100px;}
+
+.fix03 {bottom: 50px;
+ left: 500px;} 
+
+.fix04 {bottom: 100px;
+ right: 0px;}
+
+
+ /* 응용예제 */
+#box {border:1px solid red;
+width: 300px;
+height: 200px;
+overflow:hidden;
+position: relative; }
+
+#box>* {position: absolute;}
+
+#box>h3 {left: 50px;
+  top: -250px;
+  z-index: 999;
+  color: #fff;
+  font-size: 35px;
+  text-shadow: 0 0 6px #000;
+  transition:all 2s; }
+
+#box:HOVER>h3 {left: 50px;
+         top: 50px;   }
+  
+#box>img {left: -200px;
+ bottom: -150px;
+ opacity:0.3;/* 투명도 지정(0~1사이의 값) */
+ transition:all 1s;}
+  
+#box:HOVER>img {
+  width: 100%;
+  height:100%;
+  opacity:1;
+  left: 0; top:0;}
+
+#box>p {left: 550px;
+  top: 100px;
+  z-index: 999;
+  color: #fff;
+  font-size: 15px;
+  text-shadow: 0 0 6px #000;
+  transition:all 2s; }
+
+#box:HOVER>p {left: 50px;}
+
+
+
+
+

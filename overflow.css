@@ -1,0 +1,84 @@
+@CHARSET "UTF-8";
+ol {
+background-image: url("img/bokeh.jpg");
+width: 600px; height: 200px;
+padding: 40px 0 20px 30px; 
+font-size: 20px;
+line-height: 1.8;
+overflow: auto;}
+
+ol:HOVER {font-size: 50px;	}
+
+
+section {border: 3px dashed #ccc;
+ margin: 50px 30px;
+ padding: 40px;}
+
+section>p {border: 2px solid #00f;
+ width: 700px;  height: 300px;}
+
+section#sec01>p {overflow: visible;}
+section#sec02>p {overflow: hidden;}
+section#sec03>p {overflow: scroll;
+ /* height: 700px; */}
+section#sec04>p {overflow: auto;
+ /* height: 700px; */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

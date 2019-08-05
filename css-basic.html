@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css-basic</title>
+<link href="basic.css" rel="stylesheet">
+<style type="text/css">
+ li { color: blue;}
+ 
+ b {color: red;}
+ 
+ #selector {border: 3px dashed skyblue;}
+ 
+ #title01 {background-color:skyblue;
+    color: white;   }
+    
+ .sky {background-color:skyblue;}
+ 
+ .fs20 {font-size: 20px;} 
+</style>
+</head>
+<body>
+<h1 id="title01">css-basic</h1>
+<h1 class="fs20">선택자의 종류(대표 3가지)</h1>
+<ol id="selector">
+ <li>Tag선택자 - 태그 그대로를 불러와서 스타일을 적용<span class="sky fs20">(자동,강제적)</span></li>
+ <li>ID선택자 - 태그 뒤에 id를 붙여서 id값을 지정하고 id값을 불러와서(#abc) 스타일을 적용 <br>
+  <b class="fs20 sky">id값은 중복해서 쓸 수 없으므로</b> 주로 구조적인 필요에 의해서 스타일을 줄 때 쓴다.
+ </li>
+ <li>Class선택자 - 태그 뒤에 class를 붙여서 class명을 지정하고 class명 불러와서(.abc) 스타일을 적용<br>
+  <b class="sky fs20">class값은 중복해서 쓸 수 있으므로</b> 주로 디자인적인 필요에 의해서 스타일을 줄 때 쓴다.<br>
+   (태그 하나에 class명을 2개 이상 적용할 수도 있다. 공백으로 class명을 추가하면 됨.)
+ </li>
+</ol>
+
+<h1 class="fs20">css의 적용방식 3가지</h1>
+<ol id="howto">
+ <li>External style sheet방식 
+ - 외부파일(*.css)로 CSS소스를 독립시켜서 만들고 html문서에는 head내에  link태그로 연결시킴.
+ - 여러 html문서에 통일된 스타일을 적용할 수 있으며 유지보수도 수월하다.
+ </li> 
+ <li>Internal style sheet방식 
+ - html문서의 head 내에 style태그 안에 CSS소스를 적어줌.
+ - 해당 html문서에만 적용된다.
+ </li>
+ <li style="background-color:skyblue;color:white;">Inline style방식 
+ - 태그 뒤에 style속성을 추가하여 직접 CSS소스를 적어줌.
+ - 소스가 길어지고 통일된 스타일을 적용하기 어려우며 유지보수의 문제가 있으나
+      적용시 우선순위는 가장 높다.
+ </li>
+</ol>
+
+
+
+
+
+
+</body>
+</html>
+
+
+

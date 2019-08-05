@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position</title>
+<link href="position.css" rel="stylesheet">
+</head>
+<body>
+<h1>position</h1>
+<ul>
+ <li>position:static; (기본값) 좌표 적용 불가</li>
+ <li>position:relative; 현재 위치를 기준으로 좌표 지정 됨</li>
+ <li>position:absolute; 부모를 기준으로 좌표 지정 됨<br>
+  (기준이 될 부모를 position:relative;로 설정해야 함)
+ </li>
+ <li>position:fixed; 브라우저를 기준으로 좌표 지정 됨</li>
+ <li>position:sticky; relative와 fixed를 합친 효과.</li>
+</ul>
+
+<h2>z-index</h2>
+<p>요소들이 겹치게 되면 위로 올라오는 요소는 z-index의 값이 큰 것이다.<br>
+ z-index는 소스 순서대로 1씩 증가하므로 뒤에 오는 요소가 위로 올라오게 된다.<br>
+ 만약 겹치는 요소 중 가장 위로 올라오게 하려면 z-index값을 가장 크게 지정한다.
+</p>
+
+<h2>opacity</h2>
+<p>요소의 투명도 지정.(0~1사이의 값) <br>
+ 0일때는 완전히 투명. <br>
+ 1은 불투명.
+</p>
+
+<section id="sec00">
+ <h2>position:sticky; relative와 fixed를 합친 효과.</h2>
+</section>
+
+<section id="sec01">
+ <h2>position:relative; 현재 위치를 기준으로 좌표 지정</h2>
+ <p class="rel01">position:relative;<br>left: 600px;</p>
+ <p class="rel02">position:relative;<br>right: 150px;</p>
+ <p class="rel03">position:relative;<br>top: 200px;</p>
+ <p class="rel04">position:relative;<br>bottom: 200px;</p>
+ <p class="rel05">position:relative;<br>top: -100px;</p>
+</section>
+
+<section id="sec02">
+ <h2>position:absolute; 부모를 기준으로 좌표 지정</h2>
+ <p class="absol01">position:absolute;<br>left: 0;
+  top:0;</p>
+ <p class="absol02">position:absolute;<br>right: 0;</p>
+ <p class="absol03">position:absolute;<br>bottom: 0;</p>
+ <p class="absol04">position:absolute;<br>
+ left: -50px; top:-70px;</p>
+ <p class="absol05">position:absolute;</p>
+ <p class="absol06">position:absolute;</p>
+</section>
+
+<section id="sec03">
+ <h2>position:fixed; 브라우저를 기준으로 좌표 지정</h2>
+ <p class="fix01">position:fixed;<br>
+ top:100px; left: 500px;</p>
+ <p class="fix02">position:fixed;<br>
+ top:150px; right: 100px;</p>
+ <p class="fix03">position:fixed;<br>
+ bottom: 50px; left: 500px;</p>
+ <p class="fix04">position:fixed;<br>
+ bottom: 100px; right: 0px;</p>
+ <p class="fix05">position:fixed;<br></p>
+</section>
+
+<div id="box">
+ <h3>e-mail</h3>
+ <img alt="email" src="img/email.jpg">
+ <p>agdj45d@hanmail.net</p>
+</div>
+
+</body>
+</html>
+
+
+
+
+

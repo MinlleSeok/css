@@ -1,0 +1,183 @@
+@CHARSET "UTF-8";
+
+ body {margin: 0; 
+   padding: 0;}
+   
+ table#tab01 {border: 1px solid #f00;
+ width: 90%;
+ margin: 50px 10px;
+ /*border-spacing: 10px 20px; 수평 수직 순서 */
+ border-spacing: 0;/* 기본값 제거 */ 
+ border-collapse:collapse;/* 셀 바깥을 붙임 */
+ table-layout:fixed;/* 각 셀들의 너비를 균등하게 */}  
+   
+ table#tab01 th {border: 1px solid #00f;
+  padding: 6px 0; }
+ table#tab01 td {border: 1px solid #00f;
+  padding: 4px 10px;}   
+  
+ table#tab01 tr:nth-of-type(2n-1) {
+  /* 표에서 홀수번째 줄을 지정 */
+  background-color:#3ef;}
+  
+ table#tab01 tr:hover {
+  background-color:#fe3;}  
+   
+   
+  
+
+nav { /* border: 1px solid red; */
+ height: 50px; /* 자식이 float으로 빠져나가면 
+ 부모는 높이값이  없어지므로 값을 지정해서 형태를 유지함 */
+ padding-right:50px; 
+ background-color:#ca0; }
+  
+ nav>ul { /* border: 1px solid blue; */
+  margin:0;
+ /*  margin-right:50px; */
+  width: 500px; /* 목록 크기를 줄이고 */
+  /* margin: 0 auto; *//*목록 전체를 가운데 정렬=중앙메뉴바*/
+  float: right; /* 우측 메뉴바*/}
+ 
+ nav>ul>li {background-color: pink;
+ display: inline-block;/* 한줄에 나란히 오면서
+ 크기와 상하마진 적용 가능 */
+ vertical-align: top; 
+ width: 150px; height: 50px;
+ font-size: 20px;
+ font-weight:bold;
+ text-transform:capitalize;/* 첫글자를 대문자로 */
+ text-align: center;
+ line-height: 50px;/* 수직정렬 가운데로 */ }
+ 
+ nav a {/* border: 1px solid; */
+ width: 150px; height: 50px;
+ display: block; /*크기 적용 가능하도록 설정*/
+ text-decoration: none;/* 링크 밑줄 제거 */
+ color: #333;}
+ 
+ nav>ul>li:HOVER {background-color: #c00;}
+ nav>ul>li:HOVER>a {color: #fff;}
+ 
+ #sub>li {background-color: #ccc;
+   border-bottom:1px solid #eee;
+   list-style: none;}
+ 
+ #sub {display: none;}
+ #sub>li:HOVER {background-color: pink; }
+ nav>ul>li:HOVER>#sub {display: block;}
+ 
+ 
+ 
+ h1 {clear: both;}
+ 
+
+
+ dl {background-color: #ccc;
+    padding: 1.2em 1em;
+    border-radius: 30px;}
+ dt {border-top: 2px solid;
+    border-bottom: 4px dashed;
+    background-color: #fff;
+    width: 200px;
+    margin: 15px 0 12px 0;
+    padding: 5px 0 5px 10px;
+    font-size:1.2em;
+    font-weight:bold;
+    letter-spacing:0.04em;/*자간*/
+    color: #36c;}
+     
+ dd {color: #c63;}
+
+
+section {border: 2px solid #666;
+ margin: 50px 30px;
+ padding: 30px;}
+
+h2 {background-color: #666;
+ padding: 6px 10px;
+ color: #fff; } 
+ 
+ 
+ /* display:inline; */
+
+#sec01>*:NOT(h2) {border: 1px solid;
+ width:300px;  height: 50px;
+ margin: 70px;
+ display: inline;}
+
+#sec01:HOVER>*:NOT(h2) {
+ display: block;}
+
+
+ /* display:block; */
+ 
+#sec02>*:not(h2) {
+	border: 1px solid;
+	width: 300px; 
+	height: 50px;
+	margin: 30px;
+	display: block;} 
+ 
+ 
+ 
+ /* display:inline-block; */
+ 
+  #sec03>*:NOT(h2) {
+ border: 1px solid green;
+ width: 200px; height: 50px;
+ margin: 40px;
+ display: inline-block; }
+ 
+ 
+  /* display:none; */
+ 
+ #sec04>span {color: #f00;}
+ #sec04:HOVER>span {
+	display: none; }
+ 
+ 
+ .lab01 {background-color: #aef;
+ border-radius:10px; /* 모서리 라운딩 */
+ padding: 5px 10px;
+ margin: 30px 0;
+ display: inline-block;/* 상하 마진 적용 */} 
+ 
+ .lab01:HOVER {background-color: #fae;
+  cursor: pointer;/* 커서 모양 변경 */}
+ 
+ input#chk {display: none;}
+ 
+ #p01 {background-color: #aef;
+ padding: 5px 10px;
+ display: none;}
+ 
+ input#chk:CHECKED+#p01 {
+ display: block; }
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>display</title>
+<link href="display.css" rel="stylesheet">
+</head>
+<body>
+
+<table id="tab01">
+ <tr>
+  <th colspan="2">형제 선택자</th>
+ </tr>
+ <tr>
+  <th>A+B</th>
+  <th>A~B</th>
+ </tr>
+ <tr>
+  <td>A선택자와 형제관계인 요소 중 
+     바로 다음에 오는 하나의 요소 B를 지정</td>
+  <td>A선택자와 형제관계인 요소 중 
+     다음에 오는 모든 B를 지정</td> 
+ </tr>
+ <tr>
+  <th colspan="2">순서 선택자</th>
+ </tr>
+ <tr>
+  <th colspan="2">A:nth-of-type(n)
+  - A중에서 n번째의 요소를 지정</th>
+ </tr>
+ <tr>
+  <th>A:nth-of-type(2n-1)</th>
+  <th>A:nth-of-type(2n)</th>
+ </tr>
+ <tr>
+  <td>수식으로 홀수번째를 지정(=odd)</td>
+  <td>수식으로 짝수번째를 지정(=even)</td>
+ </tr>
+</table>
+
+
+<nav>
+ <ul>
+  <li><a href="#sec01">section01</a>
+   <ul id="sub">
+    <li><a href="#sub01">sub01</a></li>
+    <li><a href="#sub02">sub02</a></li>
+    <li><a href="#sub03">sub03</a></li>   
+   </ul>
+  </li>
+  <li><a href="#sec02">section02</a></li>
+  <li><a href="#sec03">section03</a></li>
+ </ul>
+</nav>
+
+
+
+<h1>display</h1>
+<ol>
+ <li>display:inline; block요소를 inline요소로 바꿈</li>
+ <li>display:block; inline요소를 block요소로 바꿈</li>
+ <li>display:inline-block; 
+  inline과 block의 성격을 합친 요소로 바꿈</li>
+ <li>display:none; 요소를 사라지게 함.</li>
+</ol>
+
+<dl>
+ <dt>inline요소?</dt>
+ <dd>한 줄에 나란히 올 수 있고 크기는 적용할 수 없고 
+         상하 margin이 적용 안됨</dd>
+ <dt>block요소?</dt>
+ <dd>한 줄에 나란히 올 수 없고 가로 크기는 100%의 상태로
+         크기 변경은 자유로우며, margin도 모두 적용 됨</dd>
+ <dt>inline-block요소?</dt>
+ <dd>한 줄에 나란히 올 수 있고 크기는 적용할 수 있고
+     margin도 모두 적용 됨</dd>
+</dl>
+
+<section id="sec01">
+ <h2>display:inline;</h2>
+ <p>[p tag]에 display:inline; 적용 </p>
+ <p>[p tag]에 display:inline; 적용 </p>
+ <p>[p tag]에 display:inline; 적용 </p>
+ 
+ <div>[div tag]에 display:inline; 적용</div>
+ <h4>[h4 tag]에 display:inline; 적용</h4>
+</section>
+
+<section id="sec02"> <!--css 적용부터 -->
+ <h2>display:block;</h2>
+ <b>[b tag]에 display:block; 적용 </b>
+ <b>[b tag]에 display:block; 적용 </b>
+ <b>[b tag]에 display:block; 적용 </b>
+ 
+ <span>[span tag]에 display:block; 적용</span>
+ <a href="#">[a tag]에 display:block; 적용</a>
+</section>
+
+
+<section id="sec03"> 
+ <h2>display:inline-block;</h2>
+ <b>[b tag]에 display:inline-block; 적용 </b> 
+ <span>[span tag]에 display:inline-block; 적용</span>
+ <a href="#">[a tag]에 display:inline-block; 적용</a>
+ <p>[p tag]에 display:inline-block; 적용</p>
+ <div>[div tag]에 display:inline-block; 적용</div>
+ <h3>[h3 tag]에 display:inline-block; 적용</h3>
+</section>
+
+
+<section id="sec04"> 
+ <h2>display:none; </h2>
+ <b>[b tag] </b> 
+ <span>[span tag]</span>
+ <a href="#">[a tag]</a>
+ <br>
+ <label for="chk" class="lab01">
+  display:none이란?
+ </label>
+ <input type="checkbox" id="chk">
+ <p id="p01">[p tag] <br>
+ 요소에 display:none;을 적용하면
+ 요소는 브라우저에 나타나지 않는다.<br>
+ 공간 또한 사라진다.</p>
+
+</section>
+
+
+
+
+
+
+
+</body>
+</html>
+
+

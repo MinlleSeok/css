@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>margin</title>
+<link href="margin.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrap">
+<h1>margin</h1>
+
+<dl>
+ <dt>margin?</dt>
+ <dd>테두리(border)를 기준으로 바깥쪽에 생기는 4방향의 여백.</dd> 
+ <dd>한줄에 나란히 오는 요소(inline요소)들은 상하방향의 margin이 적용 안 됨.</dd>
+</dl>
+
+<ol>
+ <li>margin:n n n n; 바깥여백이 top right bottom left의 순서대로 각각 적용</li>
+ <li>margin:n n; 바깥여백이 top와 bottom, right와 left가 한쌍으로 같이 적용</li>
+ <li>margin:n; 바깥여백이 양사방 동일하게 적용</li>
+ <li>
+  <ul> 
+   <li class="li01">margin-top:n; 위쪽 바깥여백이 적용</li>
+   <li class="li02">margin-right:n; 우측 바깥여백이 적용</li>
+   <li class="li03">margin-bottom:n; 아래쪽 바깥여백이 적용</li>
+   <li class="li04">margin-left:n; 좌측 바깥여백이 적용</li>
+  </ul>
+ </li>
+</ol>
+
+<section id="sec01">
+ <h2>1. margin:n n n n;</h2>
+ <div class="div01">margin:50px 0 0 0;</div>
+ <div class="div02">margin: 10px 50px 100px 150px; </div>
+ <div class="div03">margin: 0 100px 100px 50px;</div>
+ 
+ <a href="#" class="a01">margin: 100px 30px 100px 50px;</a>
+ <a href="#" class="a02">margin: 200px 50px 300px 10px; </a>
+ <a href="#" class="a03">margin: 500px 100px 500px 120px;</a>
+</section>
+
+
+<section id="sec02">
+ <h2>2. margin:n n ;</h2>
+ <div class="div04">margin: 100px 10px;</div>
+ <div class="div05">margin: 10px 100px; </div>
+ 
+ <a href="#" class="a04">margin:100px 10px;</a>
+ <a href="#" class="a05">margin: 10px 100px; </a>
+</section>
+
+<section id="sec03">
+ <h2>3. margin:n ;</h2>
+ <div class="div06">margin: 50px; </div>
+ <div class="div07">margin: 30px; </div>
+ 
+ <a href="#" class="a06">margin:50px; </a>
+ <a href="#" class="a07">margin:30px ; </a>
+</section>
+
+<section id="sec04">
+<h2>a태그의 예시</h2>
+<nav>
+ <a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a>
+</nav>
+
+
+</section>
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+

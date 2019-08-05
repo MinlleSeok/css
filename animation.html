@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>animation</title>
+<link href="animation.css" rel="stylesheet">
+</head>
+<body>
+<h1><b>a</b><b>n</b><b>i</b><b>m</b><b>a</b><b>t</b><b>i</b><b>o</b><b>n</b></h1>
+ <p class="box01">box</p>
+<ul id="text">
+ <li>animation</li>
+ <li>animation-name: 애니메이션의 이름</li>
+ <li>animation-duration: 진행 시간</li>
+ <li>animation-delay: 지연 시간</li>
+ <li>animation-iteration-count: 반복 횟수(무한반복은 infinite)</li>
+ <li>animation-direction: 진행 방향
+  <ol>
+   <li>normal</li>
+   <li>reverse</li>
+   <li>alternate</li>
+   <li>alternate-reverse</li>
+  </ol>
+ </li>
+ <li>animation-timing-function 가속 감속 등의 효과
+  <ol>
+   <li>ease</li>
+   <li>ease-in</li>
+   <li>ease-out</li>
+   <li>ease-in-out</li>
+   <li>linear</li>
+   <li>cubic-bezier(n,n,n,n)
+  <a href="https://cubic-bezier.com" target="_blank">
+    베지에곡선값 생성기</a> 
+   </li>  
+  </ol>
+ </li>
+ <li>animation-fill-mode: 애니메이션 정지시의 상태 지정
+  <ol>
+   <li>none</li>
+   <li>forwards:마지막 키프레임의 상태</li>
+   <li>backwards:첫 키프레임의 상태</li>
+   <li>both:둘다</li>
+  </ol>
+ </li>
+ <li style="list-style: circle; font-style: italic;">
+ animation-play-state: running/paused;
+  애니메이션을 진행/멈춤 상태로 지정.
+ </li>
+</ul>
+
+  <ol class="fill">
+   <li>none</li>
+   <li>forwards</li>
+   <li>backwards</li>
+   <li>both</li>
+  </ol>
+
+ <p class="pre">
+@keyframes 애니네임 {
+  0% {속성1: 속성값1; }
+  
+   ...
+  
+  100% {속성1: 속성값2; }
+ }
+</p>
+
+<label for="btn" class="btn">play | stop</label>
+<input type="checkbox" id="btn">
+
+<section id="sec01">
+<h2>animation-direction: 진행 방향</h2>
+<ol>
+ <li>normal: 기본값. 정방향으로 진행(0%~100%)</li>
+ <li>reverse: 역방향으로 진행(100%~0%)</li>
+ <li>alternate: 왕복 진행(0%~100%~0%)</li>
+ <li>alternate-reverse: 역방향 왕복 진행(100%~0%~100%)</li>
+</ol>
+
+<div class="direct01">normal</div>
+<div class="direct02">reverse</div>
+<div class="direct03">alternate</div>
+<div class="direct04">alternate-reverse</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+@CHARSET "UTF-8";
+
+section {border: 6px double #ccc;
+ margin-bottom: 50px;}
+
+h2 {background-color: #ccc;
+ color: #fff;
+ text-indent:0.7em;/* 들여쓰기 */
+ text-shadow: 2px 3px 1px #333;/* 글자그림자 */
+ letter-spacing: 0.12em;/* 자간 */ }
+
+h2>span {font-size: 0.6em;
+ font-weight: normal; /* 글자두께 */
+ letter-spacing: 0.05em;/* 자간 */ }
+
+
+ /* letter-spacing 자간 지정 */
+section#sec01>p {letter-spacing: 5px;} 
+section#sec01>button {letter-spacing: 7px;}
+section#sec01>label {letter-spacing: -0.1em;}
+section#sec01>input {letter-spacing: -0.15em; }
+
+
+ /* word-spacing  단어간 간격 */
+
+section#sec02>p {word-spacing: 30px;}
+section#sec02>div {word-spacing: 1.5em;}
+section#sec02>a {word-spacing: -0.3em;}
+
+
+ /* line-height 행간 지정  */
+
+section#sec03>p {
+	line-height: 30px; }
+
+section#sec03>ul {
+	line-height: 2em;  }
+	
+section#sec03>h3 {
+	background-color: #aef;
+	color: #37a;
+	height: 50px;
+	line-height: 50px;
+	/* 수직 가운데로 위치 */ }	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

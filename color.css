@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+.pre {white-space: pre;}
+
+
+section {border: 4px double;
+ width: 800px; 
+ padding: 30px;
+ background-image: url("img/building.jpg");}
+
+section>div {border: 1px solid;
+	height:40px; 
+	margin-bottom: 10px; }
+
+section>div:NTH-OF-TYPE(1) {
+ background-color: rgba(0,0,0,0);}
+section>div:NTH-OF-TYPE(2) {
+ background-color: rgba(0,0,0,0.1);}
+section>div:NTH-OF-TYPE(3) {
+ background-color: rgba(0,0,0,0.2);}
+section>div:NTH-OF-TYPE(4) {
+ background-color: rgba(0,0,0,0.3);}
+section>div:NTH-OF-TYPE(5) {
+ background-color: rgba(0,0,0,0.4);}
+section>div:NTH-OF-TYPE(6) {
+ background-color: rgba(0,0,0,0.5);}
+section>div:NTH-OF-TYPE(7) {
+ background-color: rgba(0,0,0,0.6);}
+section>div:NTH-OF-TYPE(8) {
+ background-color: rgba(0,0,0,0.7);}
+section>div:NTH-OF-TYPE(9) {
+ background-color: rgba(0,0,0,0.8);}
+section>div:NTH-OF-TYPE(10) {
+ background-color: rgba(0,0,0,0.9);}
+section>div:NTH-OF-TYPE(11) {
+ background-color: rgba(0,0,0,1);}
+
+
+
+
+
+
+
+
+
+
+
+
+

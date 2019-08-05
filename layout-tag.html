@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>layout-tag</title>
+<style type="text/css">
+ .h2-01 {
+  background-color: pink; }
+
+ #sec01 {
+  border: 3px solid red;  }
+</style>
+</head>
+<body>
+<header>
+ <h1>layout-tag</h1>
+ <input type="search"><input type="submit" value="search">
+ <nav>
+  <ul>
+   <li><a href="#sec01">menu01</a></li>
+   <li><a href="#sec02">menu02</a></li>
+   <li><a href="#sec03">menu03</a></li>
+   <li><a href="#sec04">menu04</a></li>
+  </ul>
+ </nav>
+</header>
+
+<article>
+<section id="sec01">
+ <h2 class="h2-01">시멘틱웹(Semantic Web)</h2>
+ <p>웹표준문서(html5)에서는 정확한 의미전달, 정확한 뜻을 가진 태그를 사용해야 함.<br>
+  예전의 div태그를 대신하여 구조를 설정하는 여러가지 태그들이 추가되었으므로 성격에 맞게 사용할 것.
+ </p>
+</section>
+
+<section id="sec02">
+ <h2 class="h2-01">시멘틱 layout tag</h2>
+ <ul>
+  <li>header - 머리말 영역 (로고, 검색창, 로그인폼 등등...)</li>
+  <li>nav - 메뉴바 영역</li>
+  <li>aside - 주제와 무관한 컨텐츠의 영역(배너, 퀵링크 등등...)</li>
+  <li>article - 독립적인 성격, 완성형의 컨텐츠 영역</li>
+  <li>section - 주제별로 분류한 컨텐츠 영역</li>
+  <li>footer - 하단 영역 (저작권, 개인정보 처리방침, 연락처 등등 ...)</li>
+ </ul>
+</section>
+
+<section id="sec03">
+ <h2>section-3 (video)</h2>
+ <p>
+ HTML  Autoplay
+ To start a video automatically use the autoplay attribute:
+ Example
+</p>
+<video width="320" height="240" autoplay>
+  <source src="img/mare.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+</video>
+</section>
+
+<section id="sec04">
+ <h2>section-4 (Multimedia)</h2> 
+ <p>What is Multimedia?
+Multimedia comes in many different formats. It can be almost anything you can hear or see.
+Examples: Images, music, sound, videos, records, films, animations, and more.
+Web pages often contain multimedia elements of different types and formats.
+In this chapter you will learn about the different multimedia formats.
+</p>
+</section>
+
+</article>
+
+<aside>
+ <a href="http://www.jeju.go.kr" target="_blank">
+  <img alt="jeju" src="img/banner01.png">
+ </a> <br>
+ <img alt="jeju" src="img/banner02.png"><br>
+ <img alt="jeju" src="img/banner03.png"><br>
+ <img alt="jeju" src="img/banner04.png">
+</aside>
+
+<footer>
+<p>
+Copyright 2019 NA All rights reserved<br>
+Republic of Korea <br>
+Tel. 82-64-120<br>
+fax.051-508-558<br>
+</p>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
