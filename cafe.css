@@ -25,12 +25,14 @@ li {font-size: 1em;
     line-height: 2;}
 
 /* 모바일 - 767px 이하 */
-#container {border: 1px solid;
+#container {
+    /* border: 1px solid; */
     width: 100%;
     margin: 0 auto;
 }
 
-header {border: 1px solid red;
+header {
+        /* border: 1px solid red; */
         width: 100%;
         height: 300px;
         background-image: url("img/header.jpg");
@@ -38,7 +40,136 @@ header {border: 1px solid red;
         background-size: cover; /* 이미지 하나로 다 채움 */
         background-position: center center;
         /* 이미지의 중앙을 기준으로 보여짐 */}
+
 nav {   background-color: #000;
         height: 50px; }
+
 nav ul {list-style: none; /* 목록 앞의 모양제거 */
         padding: 10px;}
+
+nav li {
+        /* border: 1px solid blue; */
+        display: inline-block; 
+        /* 한 줄에 나란히 오면서 크기와 상하마진 적용가능 */
+        margin: 5px 15px;
+        font-size: 0.8em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+section {   
+    border: 1px solid red;
+    width: 100%;
+    padding: 15px 5% 10px 5%;
+    position: relative;
+    /* 자식이 부모기준으로 자리잡기 위한 부모의 설정 */
+}
+
+section:nth-of-type(2n) { /* =(even) 짝수번째 */
+    /* 홀수번째 (2n-1) or (odd) */
+    background-color: #eee;
+}
+
+.title {
+    border: 1px solid blue;
+    padding: 30px 50px;
+    position: absolute;
+    /* 부모를 기준으로 자리잡기 */
+    top: 20px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.title>h1 {
+    margin-bottom: 30px;
+}
+
+.content {
+    border: 1px solid skyblue;
+    width: 90%;
+    margin: 80px auto 10px; /* 첫 값은 위쪽, 둘째 값은 좌/우,
+    세번째 값은 아래 */
+    padding: 20px;
+}
+
+.content h2 { 
+    color: #0094ff;
+    font-weight: 600;
+}
+
+.content ol {
+    margin-top: 20px;
+}
+
+.photo {
+    display: none;
+    /* 모바일에서는 사진 숨김 */
+}
+
+footer {
+    background-color: #000;
+    height:100px;
+}
+
+footer p {
+    font-size: 1.5em;
+    font-family: ;
+    color: #fff;
+    text-align: center; /* 수직 가운데 정렬용 */
+    text-transform: capitalize; /* 첫글자를 대문자로 바꿈 */
+    line-height: 100px;
+}
+
+/* 태블릿 - 768px 이상 */
+@media screen and (min-width: 768px) {
+
+    header {height: 400px;}
+    
+    section#intro, section#map {
+        /* 주제내용 2섹션을 가로로 나란히 배치함 */
+        border: 1px dotted #ccc;
+        float: left;
+        width: 50%;
+        height: 400px;
+    }
+
+    section#choice {
+        clear: both;
+        /* float의 영향을 해제함 */
+    }
+}
+
+/* PC - 992px 이상 */
+@media screen and (min-width: 992px) {
+    #container {width: 995px;
+        border: 1px solid #ccc;    
+    }
+
+    header {height: 500px;}
+
+    section#intro, section#map, section#choice {
+        /* 주제내용 2섹션을 가로로 나란히 배치함 */
+        border: 1px dotted #ccc;
+        width: 100%;
+        height: 420px;
+        padding: 15px 2% 10px 5%;
+    }
+
+    .photo {
+        display: block;
+        width: 42%;
+        /* 모바일 숨겼던 사진을 보여줌 */
+    }
+
+    .photo img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .text {
+        width: 42%;
+    }
+
+    .photo, .text {float: left}
+
+
+}
